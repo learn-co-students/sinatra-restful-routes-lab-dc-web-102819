@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <% @new_recipe.each do |recipe| %>
+            <h1> <%= recipe.last %> </h1>
+        <% end %>
+        <a href="/recipes">Link to go back to all the recipes</a>
+    </body>
+</html>

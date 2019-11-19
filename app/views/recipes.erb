@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>here we need to list all the recipes</h1>
+        <a href="/recipes/new">Create New Recipe</a>
+        <% @recipe.each do |recipe| %>
+            <h1> <%= recipe.name %> </h1>
+        <% end %>
+    </body>
+</html>
