@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+   <head>
+        
+        <title>New Recipe</title>
+        
+       
+    </head>
+    <body>
+        <h1> Welcome to Recipe App </h1>
+
+        <ul>
+         <% @recipes.each do |recipe| %>
+         <li>
+            <h2> <a href="/recipe/<%= recipe.id %>"><%= recipe.name %></a> </h2>
+         </li>
+         <% end %>
+        </ul>
+        
+        <div> <a href="/recipe/new">Create New Recipe</a> </div>
+
+    </body>
+</html>
