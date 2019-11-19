@@ -5,9 +5,9 @@
         <title></title>
     </head>
     <body>
-        <% @new_recipe.each do |recipe| %>
-            <h1> <%= recipe.last %> </h1>
-        <% end %>
-        <a href="/recipes">Link to go back to all the recipes</a>
+        <h1> <%= @recipe.name %> </h1>
+        <h1> <%= @recipe.ingredients %> </h1>
+        <h1> <%= @recipe.cook_time %> </h1>
+        <a href="/recipes">List all Recipes</a>
     </body>
 </html>
