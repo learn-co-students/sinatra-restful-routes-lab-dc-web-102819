@@ -2,12 +2,17 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Recipe Detail</title>
     </head>
     <body>
         <h1> <%= @recipe.name %> </h1>
         <h1> <%= @recipe.ingredients %> </h1>
         <h1> <%= @recipe.cook_time %> </h1>
+        <a href="/recipes/<%= @recipe.id %>/edit">Edit recipe</a>
         <a href="/recipes">List all Recipes</a>
+        <form action="/recipes/<%=@recipe.id%>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="delete">
+        </form>
     </body>
 </html>
